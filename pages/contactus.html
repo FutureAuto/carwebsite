@@ -20,8 +20,11 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/responsive.css">
+<link rel="icon" type="image/icon" href="../images/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
 
-<link rel = "icon" href ="carpages/logo.png"type = "image/x-icon">
 
 <link rel="icon" href="images/fevicon.png" type="image/gif" />
  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
@@ -51,58 +54,101 @@
         
 
 <style>
-form{
-    margin-top: 30px;
-    text-align: left;
-    font-size: 20px;
-   
+.contactus-background{
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
-input[type=text]{
-    width: 100%;
-    padding: 12px 20px;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+.background-left{
+   flex-basis: 60%;
+   padding: 40px 60px;
+   background-color: black;
+   color:white;
 }
-input[type=text]:focus {
+.background-right{
+   flex-basis: 40%;
+   padding: 40px;
+   background-color: white;
+   color:black;
+}
+.contactus-background h2{
+   margin-bottom: 10px;
+}
+.input-row{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.input-row .input-group{
+   flex-basis: 45%;
+}
+.contactus-background input{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid black;
+   outline: none;
+   padding-bottom: 5px;
+   border: 3px solid #ccc;
+   -webkit-transition: 0.5s;
+}
+.contactus-background input:focus {
   border: 3px solid #555;
 }
 
-.formsubmit{
-    margin-top: 20px;
-    text-align: center;
+.contactus-background textarea{
+   width: 100%;
+   border: 1px solid black;
+   outline: none;
+   padding: 10px;
+   box-sizing: border-box;
+   border: 3px solid #ccc;
+   -webkit-transition: 0.5s;
+}
+.contactus-background textarea:focus{
+   border: 3px solid #555;
+}
+.contactus-background label{
+   margin-bottom: 6px;
+   display: block;
+}
+.contactus-background button{
+   background: white;
+   width: 100px;
+   border: none;
+   outline: none;
+   height: 35px;
+   border-radius: 30px;
+   margin-top: 20px;
+   -webkit-transition: 0.5s;
+   box-shadow: 0px 5px 15px 0px rgba(255, 255, 255, 0.3);
 }
 
-input[type=submit]{
-    color: white;
-    font-size: larger;
-    background-color: #3C48C6;
-    border: none;
-    padding: 22px 120px;
-    border-radius: 4px;
-    cursor: pointer;
+.contactus-background button:hover{
+   background-color: black;
+   color:white;
+   border: 3px solid rgba(255, 255, 255, 0.9);
 }
-input[type=submit]:hover{
-    background-color: #29318C;
+
+.background-left h2{
+   font-weight: 600;
+   margin-bottom: 30px;
 }
-label{
-    margin-top: 30px;
+.background-right h2{
+   font-weight: 600;
+   margin-bottom: 30px;
 }
-select[type=select]{
-    border-radius: 4px;
-    border: none;
-    padding: 12px;
-    width: 100%;
-    cursor: pointer;
-    text-align: center;
-    border: 3px solid #ccc;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
+.background-right  table{
+   font-size: larger;
 }
-select[type=select]:focus{
-    border: 3px solid #555;
+.background-right tr td:first-child{
+   padding-left: 0px;
+}
+.background-right tr td{
+   padding-left: 20px;
+}
+.background-right tr td{
+   padding-top: 20px;
 }
 </style>
         
@@ -241,8 +287,6 @@ select[type=select]:focus{
             </div>
          </header>
 
-                
-
             
             
 
@@ -255,76 +299,12 @@ select[type=select]:focus{
             
             <div>
                 
-                <h1 class="headline headline--c23">Заявка за TEST DRIVE</h1>
+                <h1 class="headline headline--c23">ЗА ВРЪЗКА</h1>
                 
             </div>
 
             
-            <form action="">
-                <label>Избери автомобил*</label>
-                <div class="formselect">
-                <select type="select" >
-                    <option>BMW Series 1</option>
-                    <option>Mercedes Benz C CLASS</option>
-                    <option>Mercedes A CLASS HATCHBACK</option>
-                    <option>PEUGEOT 208</option>
-                    <option>PEUGEOT 308</option>
-                    <option>PEUGEOT 508</option>
-                    <option>NISSAN MICRA ACENTA</option>
-                    <option>FIAT TIPO</option>
-                    <option>SEAT IBIZA</option>
-                    <option>HONDA CIVIC</option>
-                    <option>PEUGEOT 5008 GT</option>
-                    <option>NISSAN X-TRAIL VISIA</option>
-                    <option>SEAT TARRACO</option>
-                    <option>BMW X4</option>
-                    <option>BMW X6</option>
-                    <option>RENAULT CAPTURE</option>
-                    <option>RENAULT ARKANA</option>
-                    <option>RENAULT KOLEOS</option>
-                    <option>FORD KUGA</option>
-                    <option>FORD EXPLORER</option>
-                    <option>RENAULT MEGANE e-TECH</option>
-                    <option>RENAULT CLIO e-TECH FULL HYBRID</option>
-                    <option>RENAULT CANGO</option>
-                    <option>RENAULT TRAFIC</option>
-                    <option>FORD TOURNEO CONNECT</option>
-                    <option>FIAT DOBLO</option>
-                    <option>PEUGEOT RIFTER</option>
-                    <option>PEUGEOT PARTNER</option>
-                    <option>PEUGEOT BOXER</option>
-                    <option>FIAT DUCATO</option>
-                    <option>RENAULT EXPRESS VAN</option>
-                    <option>FORD RANGER</option>
-                    <option>FORD TRANSIT</option>
-                    <option>BMW M4 COUPE</option>
-                    <option>Mercedes AMG A CLASS</option>
-                    <option>BMW M3 Competition Sedan</option>
-
-
-                </select>
-                </div>
-                <label type="label">Собствено име*</label>
-                <div class="forminput">
-                    <input type="text">
-                </div>
-                <label type="label">Фамилия*</label>
-                <div class="forminput">
-                    <input type="text">
-                </div>
-                <label type="label">Мобилен телефон*</label>
-                <div class="forminput">
-                    <input type="text">
-                </div>
-                <label type="label">Имейл адрес*</label>
-                <div class="forminput">
-                    <input type="text">
-                </div>
-                <div class="formsubmit">
-                    <input type="submit" value="изпрати">
-                </div>
-            </form>
-            
+         
         </div>
 
         
@@ -337,6 +317,64 @@ select[type=select]:focus{
 
 
 
+            
+
+<div id="section-hash"></div>
+
+<hr class="section-separator">
+<div class="contactus-background">
+  <div class="background-left">
+   <h2>Свържете се с нас</h2>
+   <form>
+      <div class="input-row">
+         <div class="input-group">
+            <label >Име</label>
+            <input type="text">
+         </div>
+         <div class="input-group">
+            <label >Телефон</label>
+            <input type="text">
+         </div>
+      </div>
+      <div class="input-row">
+         <div class="input-group">
+            <label >Фамилия</label>
+            <input type="text">
+         </div>
+         <div class="input-group">
+            <label >Имейл</label>
+            <input type="text">
+         </div>
+      </div>
+      <label>Съобщение</label>
+      <textarea  rows="5"></textarea>
+      <button type="submit">Изпрати</button>
+   </form>
+  </div>
+  <div class="background-right">
+   <h2>Достигнете до нас</h2>
+   <table>
+      <tr>
+         <td><b>Имейл</b></td>
+         <td>mk-autopgiblg@outlook.com</td>
+      </tr>
+      <tr>
+         <td><b>Телефон</b></td>
+         <td>0892007871</td>
+      </tr>
+      <tr>
+         <td><b>Адрес</b></td>
+         <td>ул. Борис Ангелушев</td>
+      </tr>
+   </table>
+  </div>
+</div>           
+
+
+        
+    </div>
+</div>
+
     
     <div class="l-margin-bottom-20"></div>
     
@@ -346,14 +384,12 @@ select[type=select]:focus{
         
             
 
-<div id="section-hash"></div>
 
-<hr class="section-separator">
 
 
     
         
-<footer>
+<footer style="position:absolute; bottom: 0; width: 100%;">
         
    <div class="copyright">
       <div class="container">

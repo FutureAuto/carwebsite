@@ -31,7 +31,21 @@
 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
-
+<style>
+#paragraph-change{
+   height: 184px;
+   -webkit-transition: 0.5s;
+   padding: 10px;
+}
+#paragraph-change:hover{
+   color: white;
+background-color: black;
+font-size: 25px;
+scale: 1.2;
+z-index: 10;
+border-radius: 10px;
+}
+</style>
 
         
 
@@ -86,7 +100,7 @@
                         <div class="full">
                            <div class="center-desk">
                               <div class="logo">
-                                 <a href="index.html"><img src="carpages/logo.png" width=100px height=100px alt="#" /></a>
+                                 <a href="../index.html"><img src="carpages/logo.png" width=100px height=100px alt="#" /></a>
                               </div>
                            </div>
                         </div>
@@ -99,7 +113,7 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item" style=margin-top:3%;>
-                                    <a class="nav-link" href="index.html"> Home  </a>
+                                    <a class="nav-link" href="../index.html"> Home  </a>
                                  </li>
                                  <li class="nav-item" style=margin-top:3%;>
                                     <a class="nav-link" href="aboutus.html">About us</a>
@@ -108,7 +122,7 @@
                                     <a class="nav-link" href="contactus.html">Contact us</a>
                                  </li>
                                  <li id="dropdown1" class="nav-item" style="margin-top:3%; width: 16%;">
-                                    <a class="nav-link" href="index.html">Cars </a>
+                                    <a class="nav-link" href="">Cars </a>
                                     <ul class="submenu1">
                                        <li id="dropdown2"><a id="dropdowntext" class="nav-link" href="#">Леки</a>
                                           <ul class="submenu2">
@@ -176,9 +190,7 @@
                                        </li>
                                     </ul>
                                  </li>
-                                 <li class="nav-item" style=margin-top:3%;>
-                                    <a class="nav-link" href="brochure.html"> Brochure  </a>
-                                 </li>
+                                
                                  <li class="nav-item" style=margin-top:3%;>
                                     <a class="nav-link" href="testdrive.html"> Test Drive </a>
                                  </li>
@@ -209,7 +221,7 @@
             </div>
 
             
-            <span class="wysiwyg-block wysiwyg-block--page-header-center wysiwyg-block--center block">
+            <span id="paragraph-change"class="wysiwyg-block wysiwyg-block--page-header-center wysiwyg-block--center block" style="text-align: justify;">
                 Уважаеми клиенти, ние сме от учебно-трнировъчна фирма „Future-AUTO“ ООД към Професионална гимназия по икономика „Иван Илиев“, Благоевград. Занимаваме се с продажба на леки и лекотоварни автомобили. Основната ни цел е да задоволим Вашите потребностите.
             </span>
             
@@ -236,7 +248,7 @@
     
     
        
-        <div style="font-size: 25px;"class="wysiwyg-block wysiwyg-block--16">
+        <div style="font-size: 25px; text-align: justify;"id="paragraph-change"class="wysiwyg-block wysiwyg-block--16">
             Ние сме млад, отговорен, амбициозен и предприемчив екип от професионалисти. Вие може да бъдете сигурни в автомобилите ни, те са бързи, сигурни и на достъпни цени. 
         </div>
     
@@ -256,7 +268,7 @@
     
        
     
-        <div style="font-size: 25px;"class="wysiwyg-block wysiwyg-block--16">
+        <div style="font-size: 25px; text-align: justify;"id="paragraph-change"class="wysiwyg-block wysiwyg-block--16">
             Вашата удовлетвореност е най-важната ни задача, затова държим на бързо и безупречно обслужване. 
         </div>
     
@@ -275,7 +287,7 @@
     
     
       
-        <div style="font-size: 25px;"class="wysiwyg-block wysiwyg-block--16">
+        <div style="font-size: 25px; text-align: justify;" id="paragraph-change"class="wysiwyg-block wysiwyg-block--16">
             Поднасяме Ви най-искрени благодарности, за това, че ни се доверявате и вярвате в нас. Вие ни стимулирате и по този начин ние се стремим да даваме все повече и повече от нас. 
         </div>
     
@@ -316,7 +328,7 @@
                 
                 <div class="text-center">
                     
-                    <h2 class="headline headline--c2">НАШАТА МЕСТОПОЛОЖЕНИЕ</h2>
+                    <h2 class="headline headline--c2">НАШЕТО МЕСТОПОЛОЖЕНИЕ</h2>
                     
                 </div>
                 
@@ -352,19 +364,22 @@
 
     
         
- <footer>
+<footer>
         
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2023 All Rights Reserved. FUTURE AUTO </a></p>
-                     </div>
-                  </div>
-               </div>
+   <div class="copyright">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12" >
+               <p style="float: left; left: 37%; position: relative;">© 2023 All Rights Reserved. FUTURE AUTO </p>
+               <a target="_blank" href="https://www.facebook.com/profile.php?id=100089840572911"><img  src="facebook.png" width="40px" height="40px" style="float: left; left: 37%; position: relative; padding-top: 4px; margin-left: 10px;"></a>
+               <a target="_blank" href="https://instagram.com/futureauto2023?igshid=YmMyMTA2M2Y="><img  src="instagram.svg" width="50px" height="50px" style="float: left; left: 37%; position: relative; margin-left: 10px;"></a>
+               
             </div>
          </div>
-      </footer>
+      </div>
+   </div>
+</div>
+</footer>
     
         
 
