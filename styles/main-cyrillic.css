@@ -1861,7 +1861,7 @@ html {
 }
 
 body {
-    font-family: NouvelR-Regular,NotoSans-Standard-Regular,emoji,sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.42857;
     color: #333;
@@ -7512,7 +7512,7 @@ body.no-scrollbar {
 body,html {
     font-size: 14px;
     line-height: 20px;
-    font-family: NouvelR-Regular,NotoSans-Standard-Regular,emoji,sans-serif,Arial;
+    font-family: font-family: 'Poppins', sans-serif;
     color: #000;
     background-color: #fff;
     margin: 0;
@@ -7842,7 +7842,7 @@ caption {
 @media (min-width: 960px) {
     .contact-form--title,.disclaimerC1 .headline.headline--c1c,.prices .prices_price,.strapline.strapline--c23,.wysiwyg-block.wysiwyg-block--page-header-center,.wysiwyg-block.wysiwyg-block--page-header-no-margin,p.wysiwyg-block--page-header-center,p.wysiwyg-block--page-header-no-margin {
         font-size:1.71429rem;
-        line-height: 2rem
+        line-height: 2rem;
     }
 }
 
@@ -8089,7 +8089,7 @@ caption {
 @media (min-width: 960px) {
     .box-social .content-social .social-body .description,.box-social .content-social .social-body .info,.cta--grey.load-more,.cta.cta--grey,.headline.headline--c155,.p-16,.search-box-result .search-box-result_title,.strapline.strapline--c14,.wysiwyg-block.wysiwyg-block--16,.wysiwyg-block.wysiwyg-block--16 h1,.wysiwyg-block.wysiwyg-block--16 h2,.wysiwyg-block.wysiwyg-block--16 span,p.wysiwyg-block--16,p.wysiwyg-block--16 h1,p.wysiwyg-block--16 h2,p.wysiwyg-block--16 span {
         font-size:1.14286rem;
-        line-height: 1.57143rem
+        line-height: 2rem;
     }
 }
 

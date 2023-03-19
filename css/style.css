@@ -314,11 +314,12 @@ button {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 0 25px;
+     padding: 0 45px;
      color: #000;
      font-size: 16px;
      line-height: 20px;
      text-transform: uppercase;
+     font-weight: bold;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link:focus,
