@@ -1,0 +1,639 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="bg">
+    <head>
+        <meta charset="utf-8">
+        
+<title>АВТОМОБИЛИ</title>
+
+<meta name="keywords" content="">
+
+
+<meta property="og:image" content="https://www.renault.bg/CountriesData/Bulgaria/images/Service/renault-editorial-service-066_ig_w400_h225.jpg">
+<link rel = "icon" href ="carpages/logo.png" type = "image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Rubik+Iso&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/responsive.css">
+
+
+
+<link rel="icon" href="images/fevicon.png" type="image/gif" />
+ <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
+
+        
+
+        <script type="text/javascript"> 
+            var pathToRoot = '../';
+            var IsCarPage = false;
+            var CarFolderName ='';
+            var globalMapsRegionCode = 'BG';
+        </script>
+
+        
+
+        
+        <link rel="stylesheet" href="../styles/main-cyrillic.css">
+       
+         
+        <script src="../scripts/helios_scripts/polyfills.js"></script>
+         
+
+        
+
+<style>
+.car-content{
+   position: relative;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex-flow: wrap;
+   background-color: lightgray;
+}
+.car-container{
+   width: 23.65%;
+   height: 350px;
+   background: white;
+   margin: 5px;
+   transition: transform .2s;
+   box-sizing: border-box;
+   flex-grow: 1;
+   border-radius: 3%;
+   position: relative;
+}
+.car-container:hover{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   -ms-transform: scale(1.1); /* IE 9 */
+   -webkit-transform: scale(1.1); /* Safari 3-8 */
+   transform: scale(1.1); 
+   z-index: 10;
+   cursor: pointer;
+   
+}
+.car-container:hover #car-price{
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   -ms-transform: scale(1.1); /* IE 9 */
+   -webkit-transform: scale(1.1); /* Safari 3-8 */
+   transform: scale(1.1); 
+}
+#invisible{
+   visibility: hidden;
+}
+#car-name{
+   font-family: 'Roboto', sans-serif;
+   font-size: 25px;
+   text-align: center;
+   
+}
+#car-price{
+   position: absolute;
+   bottom: 10%;
+   font-family: 'Roboto', sans-serif;
+
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+   transition: transform .2s;
+   width: 160px;
+   height: 40px;
+   font-size: 18px;
+   text-align: center;
+   color:black;
+   background-color: #efdf00;
+   border-radius: 3%;
+  
+  
+}
+.car-category{
+   position: relative;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+}
+.car-category-text{
+   margin-top: 50px;
+   text-align: start;
+   color: black;
+   font-family: 'Roboto', sans-serif;
+   
+}
+.car-category-line{
+   top:0;
+   width: 450px;
+   background-color: #efdf00;
+   height: 4px;
+   margin-top: 0;
+   margin-left: 0;
+ 
+}
+#carpage-headline{
+   font-family: 'Roboto', sans-serif;
+}
+@media  screen and (max-width:1200px){
+   .car-container{width:33.33%; margin: 2px;} 
+}
+@media  screen and (max-width:600px){
+   .car-container{width:90%;} 
+}
+</style>
+        
+        
+        
+        
+<script type="text/javascript">
+    var shouldRenderGoogleTagManager = true;
+    var dataLayer = window.dataLayer = window.dataLayer || [];
+    
+    dataLayer.push({
+        "pageCat": "edito" 
+        
+        });
+    
+    dataLayer.push({
+        "sectionNameLocal": "За собственици",
+        "sectionNameGlobal": ""
+    });
+    
+</script>
+
+    </head>
+    <body dir="ltr" class="ltr body ">
+        
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="../index.html" ><img src="carpages/logo.png" width=100px height=66px alt="#" /></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item" style=margin-top:3%;>
+                                 <a class="nav-link" href="../index.html">Начало</a>
+                              </li>
+                              <li id="dropdown1" class="nav-item" style="margin-top:3%; width: 16%;">
+                                 <a class="nav-link" href="">Коли</a>
+                                 <ul class="submenu1">
+                                    <li id="dropdown2"><a id="dropdowntext" class="nav-link" href="#">Леки</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/BMVSERIES1.html">BMW Series 1</a></li>
+                                          <li><a class="nav-link" href="carpages/MERCEDESBENZCCLASS.html">Mercedes Benz C CLASS</a></li>
+                                          <li><a class="nav-link" href="carpages/MERCEDESACLASSHATCHBACK.html">Mercedes A CLASS HATCHBACK</a></li>
+                                          <li><a class="nav-link" href="carpages/PEUGEOT208.html">PEUGEOT 208</a></li>
+                                          <li><a class="nav-link" href="carpages/PEUGEOT308.html">PEUGEOT 308</a></li>
+                                          <li><a class="nav-link" href="carpages/PEUGEOT508.html">PEUGEOT 508</a></li>
+                                          <li><a class="nav-link" href="carpages/NISSANMICRAACENTA.html">NISSAN MICRA ACENTA</a></li>
+                                          <li><a class="nav-link" href="carpages/FIATTIPO.html">FIAT TIPO</a></li>
+                                          <li><a class="nav-link" href="carpages/SEATIBIZA.html">SEAT IBIZA</a></li>
+                                          <li><a class="nav-link" href="carpages/HONDACIVIC.html">HONDA CIVIC</a></li>
+                                       </ul>
+                                    </li>
+                                    <li id="dropdown2"><a class="nav-link" href="#">SUV</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/PEUGEOT5008GT.html">PEUGEOT 5008 GT</a></li>
+                                          <li><a class="nav-link" href="carpages/NISSANX-TRAILVISIA.html">NISSAN X-TRAIL VISIA</a></li>
+                                          <li><a class="nav-link" href="carpages/SEATTARRACO.html">SEAT TARRACO</a></li>
+                                          <li><a class="nav-link" href="carpages/BMWX4.html">BMW X4</a></li>
+                                          <li><a class="nav-link" href="carpages/BMWX6.html">BMW X6</a></li>
+                                          <li><a class="nav-link" href="carpages/RENAULTCAPTURE.html">RENAULT CAPTURE</a></li>
+                                          <li><a class="nav-link" href="carpages/RENAULTARKANA.html">RENAULT ARKANA</a></li>
+                                          <li><a class="nav-link" href="carpages/RENAULTKOLEOS.html">RENAULT KOLEOS</a></li>
+                                          <li><a class="nav-link" href="carpages/FORDKUGA.html">FORD KUGA</a></li>
+                                          <li><a class="nav-link" href="carpages/FORDEXPLORER.html">FORD EXPLORER</a></li>
+                                       </ul>
+                                    </li>   
+                                    <li id="dropdown2"><a class="nav-link" href="#">Електрически</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/RENAULTMEGANEe-TECH.html">RENAULT MEGANE e-TECH</a></li>
+                                       </ul>
+                                    </li>
+                                    <li id="dropdown2"><a class="nav-link" href="#">Хибридни</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/RENAULTCLIOe-TECHFULLHYBRID.html">RENAULT CLIO e-TECH FULL HYBRID</a></li>
+                                       </ul>
+                                    </li>
+                                    <li id="dropdown2"><a class="nav-link" href="#">Пътнически ванове</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/RENAULTCANGO.html">RENAULT CANGO</a></li>
+                                          <li><a class="nav-link" href="carpages/RENAULTTRAFIC.html">RENAULT TRAFIC</a></li>
+                                          <li><a class="nav-link" href="carpages/FORDTOURNEOCONNECT.html">FORD TOURNEO CONNECT</a></li>
+                                          <li><a class="nav-link" href="carpages/FIATDOBLO.html">FIAT DOBLO</a></li>
+                                       </ul>
+                                    </li>
+                                    <li id="dropdown2"><a class="nav-link" href="#">Лекотоварни</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/PEUGEOTRIFTER.html"> PEUGEOT RIFTER</a></li>
+                                          <li><a class="nav-link" href="carpages/PEUGEOTPARTNER.html"> PEUGEOT PARTNER</a></li>
+                                          <li><a class="nav-link" href="carpages/PEUGEOTBOXER.html"> PEUGEOT BOXER</a></li>
+                                          <li><a class="nav-link" href="carpages/FIATDUCATO.html">FIAT DUCATO</a></li>
+                                          <li><a class="nav-link" href="carpages/RENAULTEXPRESSVAN.html">RENAULT EXPRESS VAN</a></li>
+                                          <li><a class="nav-link" href="carpages/FORDRANGER.html">FORD RANGER</a></li>
+                                          <li><a class="nav-link" href="carpages/FORDTRANSIT.html">FORD TRANSIT</a></li>
+                                       </ul>
+                                    </li>
+                                    <li id="dropdown2"><a class="nav-link" href="#">Спортни</a>
+                                       <ul class="submenu2">
+                                          <li><a class="nav-link" href="carpages/BMWM4COUPE.html">BMW M4 COUPE</a></li>
+                                          <li><a class="nav-link" href="carpages/MercedesAMGACLASS.html"> Mercedes AMG A CLASS</a></li>
+                                          <li><a class="nav-link" href="carpages/BMWM3CompetitionSedan.html"> BMW M3 Competition Sedan</a></li>
+                                       </ul>
+                                    </li>
+                                 </ul>
+                              </li>
+                             
+                             
+                              <li class="nav-item" style=margin-top:3%;>
+                                 <a class="nav-link" href="testdrive.html">Тест  драйв</a>
+                              </li>
+                              <li class="nav-item" style=margin-top:3%;>
+                                 <a class="nav-link" href="aboutus.html">За нас</a>
+                              </li>
+                              <li class="nav-item" style=margin-top:3%;>
+                                 <a class="nav-link" href="contactus.html">За връзка</a>
+                              </li>
+                           
+                            
+                           </ul>
+                           
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+            
+            
+
+            
+    
+    
+<div class="row l-row-regular">
+    <div class="col-xs-12 ">
+        <div class="editorial-page-header editorial-page-header--c23 searchable-content text-center">
+            
+            <div>
+                
+                <h1 id="carpage-headline"class="headline headline--c23">ВСИЧКИ АВТОМОБИЛИ</h1>
+                
+            </div>
+
+            
+         
+        </div>
+
+        
+    </div>
+</div>
+
+
+    
+            
+
+
+
+            
+
+<div id="section-hash"></div>
+
+<hr class="section-separator">
+<!--LEKI-->
+<div class="car-category">
+<h1 class="car-category-text">Леки</h1>
+<hr class="car-category-line">
+<div class="car-content">
+   
+   <div class="car-container" onclick="location.href='carpages/BMVSERIES1.html'">
+   <img src="carpages/carimages/bmv1series/bmv-1-series.png" href="carpages/BMVSERIES1.html">
+   <h1 id="car-name">BMW Series 1</h1>
+   <button id="car-price">ЦЕНА: 20 000 лв</button>
+   </div>
+   
+   <div class="car-container" onclick="location.href='carpages/MERCEDESBENZCCLASS.html'">
+      <img src="carpages/carimages/mecedesbenzcclass/mercedesbenzcclass.webp" href="carpages/MERCEDESBENZCCLASS.html">
+      <h1 id="car-name">Mercedes Benz C CLASS</h1>
+      <button id="car-price">ЦЕНА: 25 500лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/MERCEDESACLASSHATCHBACK.html'">
+      <img src="carpages/carimages/mercedesbenzaclass/mercedesbenzaclass.jpeg" href="carpages/MERCEDESACLASSHATCHBACK.html">
+      <h1 id="car-name">Mercedes Benz A CLASS</h1>
+      <button id="car-price">ЦЕНА: 30 900лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/PEUGEOT208.html'">
+      <img src="carpages/carimages/peugeot208gt/peugeot208gt.png" href="carpages/PEUGEOT208.html">
+      <h1 id="car-name">PEUGEOT 208 GT</h1>
+      <button id="car-price">ЦЕНА: 15 900лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/PEUGEOT308.html'">
+      <img src="carpages/carimages/peugeot308gt/peugeot308gt.png" href="carpages/PEUGEOT308.html">
+      <h1 id="car-name">PEUGEOT 308 GT</h1>
+      <button id="car-price">ЦЕНА: 17 990лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/PEUGEOT508.html'">
+      <img src="carpages/carimages/peugeot508gt/peugeot508gt.webp" href="carpages/PEUGEOT508.html">
+      <h1 id="car-name">PEUGEOT 508 GT</h1>
+      <button id="car-price">ЦЕНА: 25 500лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/NISSANMICRAACENTA.html'">
+      <img src="carpages/carimages/nissanmicraacenta/nissanmicraacenta.webp" href="carpages/NISSANMICRAACENTA.html">
+      <h1 id="car-name">NISSAN MICRA ACENTA</h1>
+      <button id="car-price">ЦЕНА: 18 699лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/FIATTIPO.html'">
+      <img src="carpages/carimages/fiattipo/fiattipo.png" href="carpages/FIATTIPO.html">
+      <h1 id="car-name">FIAT TIPO</h1>
+      <button id="car-price">ЦЕНА: 15 000лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/SEATIBIZA.html'">
+      <img src="carpages/carimages/seatibiza/seatibiza.png" href="carpages/SEATIBIZA.html">
+      <h1 id="car-name">SEAT IBIZA</h1>
+      <button id="car-price">ЦЕНА: 17 900лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/HONDACIVIC.html'">
+      <img src="carpages/carimages/HONDACIVIC/HONDACIVIC.png" href="carpages/HONDACIVIC.html">
+      <h1 id="car-name">HONDA CIVIC</h1>
+      <button id="car-price">ЦЕНА: 34 000лв</button>
+   </div>
+   <div id="invisible" class="car-container"></div>
+   <div id="invisible" class="car-container">   </div>
+</div>           
+</div>
+<!--SUV-->
+<div class="car-category">
+<h1 class="car-category-text">SUV</h1>
+<hr class="car-category-line">
+<div class="car-content">
+   
+   <div class="car-container" onclick="location.href='carpages/PEUGEOT5008GT.html'">
+   <img src="carpages/carimages/peugeot5008gt/peugeot5008gt.png" href="carpages/PEUGEOT5008GT.html">
+   <h1 id="car-name">PEUGEOT 5008 GT</h1>
+   <button id="car-price">ЦЕНА: 40 000лв</button>
+   </div>
+   
+   <div class="car-container" onclick="location.href='carpages/NISSANX-TRAILVISIA.html'">
+      <img src="carpages/carimages/NISSANX-TRAILVISIA/nissanx-trailvisia.jpg" href="carpages/NISSANX-TRAILVISIA.html">
+      <h1 id="car-name">NISSAN X-TRAIL VISIA</h1>
+      <button id="car-price">ЦЕНА: 22 999лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/SEATTARRACO.html'">
+      <img src="carpages/carimages/SEAT TARRACO/seatterraco.png" href="carpages/SEATTARRACO.html">
+      <h1 id="car-name">SEAT TARRACO</h1>
+      <button id="car-price">ЦЕНА: 42 500лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/BMWX4.html'">
+      <img src="carpages/carimages/BMWX4/bmvx4.png" href="carpages/BMWX4.html">
+      <h1 id="car-name">BMW X4</h1>
+      <button id="car-price">ЦЕНА: 38 000лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/BMWX6.html'">
+      <img src="carpages/carimages/bmvx6/bmvx6.png" href="carpages/BMWX6.html">
+      <h1 id="car-name">BMW X6</h1>
+      <button id="car-price">ЦЕНА: 48 800лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/RENAULTCAPTURE.html'">
+      <img src="carpages/carimages/RENAULTCAPTURE/renaultcapture.webp" href="carpages/RENAULTCAPTURE.html">
+      <h1 id="car-name">RENAULT CAPTUR</h1>
+      <button id="car-price">ЦЕНА: 26 800лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/RENAULTARKANA.html'">
+      <img src="carpages/carimages/RENAULT ARKANA/RENAULTARKANA.webp" href="carpages/RENAULTARKANA.html">
+      <h1 id="car-name">RENAULT ARKANA</h1>
+      <button id="car-price">ЦЕНА: 48 000лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/RENAULTKOLEOS.html'">
+      <img src="carpages/carimages/RENAULTKOLEOS/RENAULTKOLEOS.png" href="carpages/RENAULTKOLEOS.html">
+      <h1 id="car-name">RENAULT KOLEOS</h1>
+      <button id="car-price">ЦЕНА: 42 999лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/FORDKUGA.html'">
+      <img src="carpages/carimages/FORDKUGA/FORDKUGA.png" href="carpages/FORDKUGA.html">
+      <h1 id="car-name">FORD KUGA</h1>
+      <button id="car-price">ЦЕНА: 25 000лв</button>
+   </div>
+   <div class="car-container" onclick="location.href='carpages/FORDEXPLORER.html'">
+      <img src="carpages/carimages/FORDEXPLORER/FORDEXPLORER.png" href="carpages/FORDEXPLORER.html">
+      <h1 id="car-name">FORD EXPLORER</h1>
+      <button id="car-price">ЦЕНА: 53 500лв</button>
+   </div>
+   <div id="invisible" class="car-container"></div>
+   <div id="invisible" class="car-container">   </div>
+</div>           
+</div>
+<!--ELEKTRICHESKI-->
+<div class="car-category">
+   <h1 class="car-category-text">Електрически</h1>
+   <hr class="car-category-line">
+   <div class="car-content">
+      
+      <div class="car-container" onclick="location.href='carpages/RENAULTMEGANEe-TECH.html'">
+      <img src="carpages/carimages/RENAULTMEGANEe-TECH/renaultmegane.png" href="carpages/RENAULTMEGANEe-TECH.html">
+      <h1 id="car-name">RENAULT MEGANE e-TECH</h1>
+      <button id="car-price">ЦЕНА:  65 000лв</button>
+      </div>
+      
+      <div id="invisible" class="car-container"></div>
+      <div id="invisible" class="car-container"></div>
+      <div id="invisible" class="car-container"></div>
+   </div>           
+   </div>
+<!--Hybridni-->
+<div class="car-category">
+   <h1 class="car-category-text">Хибридни</h1>
+   <hr class="car-category-line">
+   <div class="car-content">
+      
+      <div class="car-container" onclick="location.href='carpages/RENAULTCLIOe-TECHFULLHYBRID.html'">
+      <img src="carpages/carimages/RENAULTCLIO/RENAULTCLIO.png" href="carpages/RENAULTCLIOe-TECHFULLHYBRID.html">
+      <h1 id="car-name">RENAULT CLIO</h1>
+      <button id="car-price">ЦЕНА:  28 000лв</button>
+      </div>
+      
+      <div id="invisible" class="car-container"></div>
+      <div id="invisible" class="car-container"></div>
+      <div id="invisible" class="car-container"></div>
+   </div>           
+   </div>     
+<!--Putnicheski vanove-->
+<div class="car-category">
+   <h1 class="car-category-text">Пътнически ванове</h1>
+   <hr class="car-category-line">
+   <div class="car-content">
+      
+      <div class="car-container" onclick="location.href='carpages/RENAULTCANGO.html'">
+      <img src="carpages/carimages/RENAULTCANGO/renaulkangoo.jpg" href="carpages/RENAULTCANGO.html">
+      <h1 id="car-name">RENAULT KANGOO</h1>
+      <button id="car-price">ЦЕНА:  11 000лв</button>
+      </div>
+      
+      <div class="car-container" onclick="location.href='carpages/RENAULTTRAFIC.html'">
+         <img src="carpages/carimages/RENAULTTRAFIC/RENAULTTRAFIC.jpg" href="carpages/RENAULTTRAFIC.html">
+         <h1 id="car-name">RENAULT TRAFIC</h1>
+         <button id="car-price">ЦЕНА:  15 000лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/FORDTOURNEOCONNECT.html'">
+         <img src="carpages/carimages/FORDTOURNEOCONNECT/FORDTOURNEOCONNECT.png" href="carpages/FORDTOURNEOCONNECT.html">
+         <h1 id="car-name">FORD TOURNEO CONNECT</h1>
+         <button id="car-price">ЦЕНА:  19 000 лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/FIATDOBLO.html'">
+         <img src="carpages/carimages/FIATDOBLO/FIATDOBLO.png" href="carpages/FIATDOBLO.html">
+         <h1 id="car-name">FIAT DOBLO</h1>
+         <button id="car-price">ЦЕНА:  20 000лв</button>
+      </div>
+   </div>           
+   </div>  
+<!--Lekotovarni-->
+<div class="car-category">
+   <h1 class="car-category-text">Лекотоварни</h1>
+   <hr class="car-category-line">
+   <div class="car-content">
+      
+      <div class="car-container" onclick="location.href='carpages/PEUGEOTRIFTER.html'">
+      <img src="carpages/carimages/PEUGEOTRIFTER/PEUGEOTRIFTER.avif" href="carpages/PEUGEOTRIFTER.html">
+      <h1 id="car-name">PEUGEOT RIFTER</h1>
+      <button id="car-price">ЦЕНА:  25 000 лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/PEUGEOTPARTNER.html'">
+         <img src="carpages/carimages/PEUGEOTPARTNER/PEUGEOTPARTNER.jpg" href="carpages/PEUGEOTPARTNER.html">
+         <h1 id="car-name">PEUGEOT PARTNER</h1>
+         <button id="car-price">ЦЕНА:  27 900лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/PEUGEOTBOXER.html'">
+         <img src="carpages/carimages/PEUGEOTBOXER/peugeotboxer.png" href="carpages/PEUGEOTBOXER.html">
+         <h1 id="car-name">PEUGEOT BOXER</h1>
+         <button id="car-price">ЦЕНА:  35 000лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/FIATDUCATO.html'">
+         <img src="carpages/carimages/FIATDUCATO/van_755x452-L4-H2.png" href="carpages/FIATDUCATO.html">
+         <h1 id="car-name">FIAT DUCATO</h1>
+         <button id="car-price">ЦЕНА:  20 000лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/RENAULTEXPRESSVAN.html'">
+         <img src="carpages/carimages/RENAULTEXPRESSVAN/RENAULTEXPRESSVAN.png" href="carpages/RENAULTEXPRESSVAN.html">
+         <h1 id="car-name">RENAULT EXPRESS VAN</h1>
+         <button id="car-price">ЦЕНА:  30 000лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/FORDRANGER.html'">
+         <img src="carpages/carimages/FORDRANGER/FORDRANGER.webp" href="carpages/FORDRANGER.html">
+         <h1 id="car-name">FORD RANGER</h1>
+         <button id="car-price">ЦЕНА:  34 900лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/FORDTRANSIT.html'">
+         <img src="carpages/carimages/FORDTRANSIT/FORDTRANSIT.png" href="carpages/FORDTRANSIT.html">
+         <h1 id="car-name">FORD TRANSIT</h1>
+         <button id="car-price">ЦЕНА:  30 900лв</button>
+      </div>
+      
+      <div id="invisible" class="car-container"></div>
+    
+   </div>           
+   </div>  
+<!--Sportni-->
+<div class="car-category">
+   <h1 class="car-category-text">Спортни</h1>
+   <hr class="car-category-line">
+   <div class="car-content">
+      
+      <div class="car-container" onclick="location.href='carpages/BMWM4COUPE.html'">
+      <img style="margin-top:30px;" src="carpages/carimages/BMWM4COUPE/bmvm4coupe.png" href="carpages/BMWM4COUPE.html">
+      <h1 id="car-name">BMW M4 COUPE</h1>
+      <button id="car-price">ЦЕНА:  85 000лв</button>
+      </div>
+      
+      <div class="car-container" onclick="location.href='carpages/MercedesAMGACLASS.html'">
+         <img src="carpages/carimages/MercedesAMGACLASS/MercedesAMGACLASS.webp" href="carpages/MercedesAMGACLASS.html">
+         <h1 id="car-name">MERCEDES AMG A CLASS</h1>
+         <button id="car-price">ЦЕНА:  67 000лв</button>
+      </div>
+      <div class="car-container" onclick="location.href='carpages/BMWM3CompetitionSedan.html'">
+         <img  src="carpages/carimages/BMWM3CompetitionSedan/BMWM3CompetitionSedan.webp" href="carpages/BMWM3CompetitionSedan.html">
+         <h1 id="car-name">BMW M3 Competition Sedan</h1>
+         <button id="car-price">ЦЕНА:  100 000 лв</button>
+      </div>
+      <div id="invisible" class="car-container"></div>
+   </div>           
+   </div>  
+
+
+
+    </div>
+</div>
+
+    
+    <div class="l-margin-bottom-20"></div>
+    
+        
+
+    
+        
+            
+
+
+
+
+    
+        
+    <footer>
+        
+      <div class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12" >
+                  <p style="float: left; left: 37%; position: relative;">© 2023 All Rights Reserved. FUTURE AUTO </p>
+                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100089840572911"><img  src="facebook.png" width="40px" height="40px" style="float: left; left: 37%; position: relative; padding-top: 4px; margin-left: 10px;"></a>
+                  <a target="_blank" href="https://instagram.com/futureauto2023?igshid=YmMyMTA2M2Y="><img  src="instagram.svg" width="50px" height="50px" style="float: left; left: 37%; position: relative; margin-left: 10px;"></a>
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   </footer>
+    
+        
+
+
+
+
+    
+            
+
+
+            
+
+
+
+        
+        <script src="../scripts/helios_scripts/runtime.min.js"></script>
+        <script src="../scripts/helios_scripts/vendor.min.js"></script>
+        
+
+        
+        
+        
+    </body>
+</html>
